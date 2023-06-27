@@ -1,3 +1,10 @@
+/*
+ * @Date: 2023-06-27 09:33:02
+ * @LastEditors: with-the-winds
+ * @LastEditTime: 2023-06-27 09:56:25
+ * @Description: 头部注释
+ * @FilePath: \own_tools\src\router\index.js
+ */
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
@@ -8,12 +15,9 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/color/RGBToHex',
+    name: 'RGBToHex',
+    component: () => import('../views/ColorConversion.vue')
   }
 ]
 
