@@ -7,6 +7,7 @@ const { ElementPlusResolver } = require('unplugin-vue-components/resolvers')
 module.exports = defineConfig({
   transpileDependencies: true,
   outputDir: 'docs',
+  assetsDir: 'static',
   configureWebpack:{
     //配置webpack自动按需引入element-plus
     plugins: [
